@@ -13,33 +13,37 @@ class OurBusiness extends Component {
                 img: finance_img,
                 title:'Finance Services',
                 desc: "We provide banking and finance solution to ensure our solution will help our customer",
-                duration: 1000
+                duration: 1000,
+                redirect: "/financial-services"
             },
             {
                 img: enterprise_img,
                 title:'Enterprise Level',
                 desc: "Enterprise level businesses are always a significant consideration every decision making",
-                duration: 1500
+                duration: 1500,
+                redirect: "/enterprise-level"
             },
             {
                 img: sme_img,
                 title:'SME Level',
                 desc: "We aim to support small and medium enterprise level to achieve faster growth in technology aspect",
-                duration: 2000
+                duration: 2000,
+                redirect: "/sme-level"
             },
             {
                 img: db_middle_img,
                 title:'Database & Middleware',
                 desc: "A well-integrated solutions framework and its implementation to support your business",
-                duration: 2500
+                duration: 2500,
+                redirect: "/database-middleware"
             },
 
-        ].map( ({img, title, desc, duration}) => {
-            return <BusinessCardComp key={title} img={img} title={title} desc={desc} duration={duration}/>
+        ].map( ({img, title, desc, duration, redirect}) => {
+            return <BusinessCardComp key={title} img={img} title={title} desc={desc} duration={duration} redirect={redirect}/>
         })
         return (
             <div className="p-20">
-                <p className='text-4xl font-bold text-[#3789E5] text-center py-20' data-aos="fade-down" data-aos-duration="2000">Our Business Solution</p>
+                <p className='text-4xl font-bold text-[#3789E5] text-center py-20' data-aos="fade-up" data-aos-duration="2000">Our Business Solution</p>
                 <div className="grid grid-cols-4 gap-6">
                     {data}
                 </div>

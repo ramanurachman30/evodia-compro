@@ -10,7 +10,7 @@ const Navbar = () => {
                 </div>
                 <div className="flex gap-12 font-medium">
                     <Link to="/">Home</Link>
-                    <Link to="/about-us">About Us</Link>
+                    <Link to="/about-more">About Us</Link>
                     <div className="group relative">
                         <button className="rounded inline-flex items-center group">
                             <span className="mr-1">Our Business</span>

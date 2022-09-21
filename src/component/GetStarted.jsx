@@ -16,7 +16,7 @@ class GetStarted extends Component {
             {mulai.desc}
           </p>
           <div data-aos="fade-up" data-aos-duration="4000">
-            <a href="/" className="text-base font-semibold py-2 px-5 text-white border-2 border-yellow-400 hover:bg-blue-100 rounded-lg">
+            <a href="/" className="text-base font-semibold py-2 px-5 text-white border-2 border-yellow-400 hover:bg-yellow-400 hover:text-[#3789E5] rounded-lg">
                 Contact Us
             </a>
           </div>
